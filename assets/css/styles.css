@@ -98,6 +98,11 @@ body {
 
 /** Mobile **/
 @media (max-width: 600px){
+    .site-logo h1 a {
+        position: relative;
+        left: -115px;
+    } 
+
     .navbar .container {
         flex-direction: column;
         padding: 0;
