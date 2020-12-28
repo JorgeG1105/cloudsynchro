@@ -114,6 +114,7 @@ body {
 
 .plans {
     background-color: var(--primary-color);
+    border-top: 2px solid var(--secondary-color);
 }
 
 .plans-title {
