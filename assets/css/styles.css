@@ -28,6 +28,11 @@ body {
     align-items: center;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .flex {
     display: flex;
     height: 100%;
@@ -179,9 +184,54 @@ body {
 }
 
 /*  Services  */
-.services-title {
+
+.services-title::before {
+    content: '';
+    position: absolute;
+    width: 140px;
+    height: 4px;
+    background: var(--secondary-color);
+    transform: translate(-50%,0);
     text-align: center;
 }
+
+.services-title {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.services-title h2 {
+    padding-top: 1rem;
+}
+
+.box {
+    padding: 3rem 3rem;
+    margin: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.box-title {
+    text-align: center;
+    margin: 1rem;
+}
+
+.spaceship {
+    color: #577635;
+}
+
+.shuttle {
+    color: #532F82;
+}
+
+.balance {
+    color: #226D7A;
+}
+
+.sliders {
+    color: #96762E;
+}
+
 
 /********************* Media Queries ******************************/
 
