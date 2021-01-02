@@ -178,6 +178,11 @@ body {
     background-color: #2B77F3;
 }
 
+/*  Services  */
+.services-title {
+    text-align: center;
+}
+
 /********************* Media Queries ******************************/
 
 
