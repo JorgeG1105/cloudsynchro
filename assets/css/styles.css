@@ -60,6 +60,10 @@ body {
     font-size: 4rem;
 }
 
+.no-display {
+    display: none;
+}
+
 /*   Navbar   */
 
 .navbar .container {
@@ -136,6 +140,10 @@ body {
     line-height: 24px;
 }
 
+.card-title h3 {
+    margin-top: 1rem;
+}
+
 .card-title p {
     font-size: .9rem;
     line-height: 40px;
@@ -183,6 +191,22 @@ body {
     background-color: #2B77F3;
 }
 
+.entry {
+    color: #577635;
+}
+
+.business {
+    color: #532F82;
+}
+
+.business-plus {
+    color: #96762E;
+}
+
+.maxpower {
+    color: #226D7A;
+}
+
 /*  Services  */
 
 .services-title::before {
@@ -214,39 +238,124 @@ body {
 .box-title {
     text-align: center;
     margin: 1rem;
+    color: var(--secondary-color);
 }
 
-.spaceship {
-    color: #577635;
+.box-info {
+    margin: 1rem 0;
 }
 
-.shuttle {
-    color: #532F82;
+.box-btn {
+    display: block;
+    margin: 20px 1rem;
+    padding: 10px 1rem;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
 }
 
-.balance {
-    color: #226D7A;
+.box-btn:hover {
+    background-color: #2B77F3;
 }
 
-.sliders {
-    color: #96762E;
+.btn-img {
+    margin: 1rem 0;
 }
+
+/*    FAQS     */
+
+.faq-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px 40px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.faqs-title::before {
+    content: '';
+    position: absolute;
+    width: 140px;
+    height: 4px;
+    background: var(--secondary-color);
+    transform: translate(-50%,0);
+    text-align: center;
+}
+
+.faqs-title {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.faqs-title h2 {
+    padding-top: 1rem;
+}
+
+.faq-card-title-section {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+}
+
+.faq-card {
+    border: 2px solid #f5f5f5;
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+    transition: ease all 0.5s;
+    cursor: pointer;
+}
+
+.faq-card:hover {
+    border: 2px solid var(--secondary-color);
+}
+
+.faq-card-info p {
+    margin: 1rem;
+}
+
+/*     GET STARTED     */
+
+.get-started {
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: #FFFFFF;
+}
+
+.get-started h2 {
+    padding: 40px 0;
+}
+
 
 
 /********************* Media Queries ******************************/
 
 
-/** Tablet **/
+/****************************************************** Tablet **********************************************************/
 @media (max-width: 900px){
-    .card-container{
+    .card-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    /* Services */
+    .box-btn {
+        margin: 0;
+    }
+
+    /*FAQs*/
+    .faq-card-title-section {
+        width: 700px;
     }
 }
 
 
-/** Mobile **/
+/****************************************************** Mobile **********************************************/
 @media (max-width: 600px){
+
+    /**Navbar**/
+
     .site-logo h1 a {
         position: relative;
         left: -60px;
@@ -275,7 +384,7 @@ body {
         width: 100%;
     }
 
-    .hamburger{
+    .hamburger {
         position: absolute;
         display: block;
         top: .75rem;
@@ -290,5 +399,39 @@ body {
 
     .card-container {
         grid-template-columns: 1fr;
+    }
+
+    /*Services*/
+
+    .services-title h2 {
+        margin: 1rem;
+    }
+
+    .box-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .box {
+        padding: 2rem 2rem;
+        text-align: center;
+    }
+
+    .box-btn {
+        margin: 20px 0;
+        padding: 10px 1rem;
+    }
+
+    /*FAQs*/
+    .faqs-title h2 {
+        margin: 1rem;
+    }
+
+    .faq-card-title-section {
+        width: 300px;
+    }
+
+    .faq-card-title h3 {
+        font-size: 1rem;
     }
 }
