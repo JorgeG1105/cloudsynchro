@@ -321,11 +321,36 @@ body {
     text-align: center;
     background-color: var(--secondary-color);
     color: #FFFFFF;
+    background: linear-gradient(to right, rgba(66, 134, 244, 1),rgba(55, 59, 68, 1));
+    /* display: flex;
+    flex-direction: column; */
 }
 
 .get-started h2 {
     padding: 40px 0;
 }
+
+.get-started p {
+    margin: 0 300px;
+    padding: 20px;
+}
+
+.get-started-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.get-started a {
+    display: block;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: var(--primary-color);
+    border-radius: 5%;
+}
+
 
 
 
@@ -347,6 +372,11 @@ body {
     /*FAQs*/
     .faq-card-title-section {
         width: 700px;
+    }
+
+    /*GET STARTED*/
+    .get-started p {
+        margin: 0 200px;
     }
 }
 
@@ -433,5 +463,10 @@ body {
 
     .faq-card-title h3 {
         font-size: 1rem;
+    }
+
+    /*GET STARTED*/
+    .get-started p {
+        margin: 0;
     }
 }
